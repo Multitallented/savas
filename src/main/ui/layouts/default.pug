@@ -1,0 +1,22 @@
+-var pageTitle = "Savas";
+-var defaultHeader = true;
+-var defaultFooter = true;
+-var ngController = "genericController";
+block meta
+
+doctype html
+html(lang="en", ng-app="app")
+    head
+        title=pageTitle
+        block head
+        if (defaultHeader)
+            include ../fragments/header
+    body(ng-controller=ngController)
+        header
+            block header
+        block body
+        footer
+            block footer
+            if (defaultFooter)
+                include ../fragments/footer
+        block scripts

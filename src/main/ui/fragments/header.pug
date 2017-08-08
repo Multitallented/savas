@@ -1,0 +1,8 @@
+-var loggedIn = false;
+.container
+    .right.account-header
+        a(href="login.html", ng-if="loggedIn") Login
+        a(href="register.html", ng-if="loggedIn") Register
+        a(href="account.html", ng-if="!loggedIn") My Account
+        a(href="logout.html", ng-if="!loggedIn") Logout
+    h1 Savas
